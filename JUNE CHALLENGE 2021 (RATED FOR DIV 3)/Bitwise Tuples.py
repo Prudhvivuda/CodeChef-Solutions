@@ -27,15 +27,14 @@ Sample Output
 228250597
 Explanation
 Test Case 1: The only possible tuple is (0).
-
 Test Case 2: The tuples are (0,0), (0,1), (0,2), (0,3), (1,0), (2,0), (3,0), (1,2), (2,1).
 
-
+___________________________________________________________________________________________
 
 def findP(a, b):
     mod = pow(10,9) + 7
     ans = 1
-#   binary exponentiaton
+    # binary exponentiaton
     while b:
         if b%2 :ans = (ans*a)%mod
         a = (a*a)%mod
@@ -48,3 +47,6 @@ for _ in range(int(input())):
     ans1 = (pow(10,9))+7
     ans = ans%ans1
     print(ans)
+    
+    
+ 
